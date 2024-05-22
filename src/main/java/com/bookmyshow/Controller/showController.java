@@ -16,10 +16,10 @@ public class showController {
     @Autowired
     ShowService showService;
 
-//    @PostMapping("/{city}")
-//    public ResponseEntity<List<Movie>>getMovieByAddress(@PathVariable String city){
-//        return showService.getMovieByAddress(city);
-//    }
+    @GetMapping("/{city}")
+    public ResponseEntity<List<Movie>>getMovieByAddress(@PathVariable String city){
+        return showService.getMovieByAddress(city);
+    }
 
     @PostMapping("/add")
     public ResponseEntity<String>addShow(@RequestBody Show show,@RequestParam long movieId,@RequestParam long cinemaId){

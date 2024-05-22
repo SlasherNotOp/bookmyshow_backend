@@ -34,14 +34,14 @@ public class ShowService {
         }
        return new ResponseEntity<>("fail",HttpStatus.BAD_REQUEST);
     }
-//    public ResponseEntity<List<Movie>> getMovieByAddress(String city) {
-//        try {
-//            return new ResponseEntity<>(showRepository.getMovieByAddress(city),HttpStatus.OK);
-//
-//        }catch (Exception e){
-//            e.printStackTrace();
-//
-//        }
-//        return new ResponseEntity<>(new ArrayList<>(), HttpStatus.BAD_REQUEST);
-//    }
+    public ResponseEntity<List<Movie>> getMovieByAddress(String city) {
+        try {
+            return new ResponseEntity<>(showRepository.getMovieByAddress(city),HttpStatus.OK);
+
+        }catch (Exception e){
+            e.printStackTrace();
+
+        }
+        return new ResponseEntity<>(new ArrayList<>(), HttpStatus.BAD_REQUEST);
+    }
 }
