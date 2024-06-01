@@ -11,6 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("show")
+@CrossOrigin("http://localhost:5173/")
 public class showController {
 
     @Autowired

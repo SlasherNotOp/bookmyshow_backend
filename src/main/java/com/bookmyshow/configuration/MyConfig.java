@@ -22,7 +22,7 @@ import org.springframework.security.web.SecurityFilterChain;
 public class MyConfig {
 
     @Bean
-    public InMemoryUserDetailsManager setUpUsers(){git
+    public InMemoryUserDetailsManager setUpUsers(){
         UserDetails userDetails= User.builder()
                 .username("MOHIT")
                 .password(passwordEncoder().encode("MOHIT"))
