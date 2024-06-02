@@ -13,8 +13,13 @@ public class userController {
     UserService userService;
 
     @PostMapping("/add")
-    public void addUser(@RequestBody User user){
+    public String addUser(@RequestBody User user){
 
-        userService.addUser(user);
+       return userService.addUser(user);
+    }
+
+    @PostMapping("/addByOtp")
+    public String addUserwithOtp(@RequestBody User user){
+        return userService.addUserWithOtp(user);
     }
 }
