@@ -14,7 +14,9 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/cinema")
-@CrossOrigin("http://localhost:5173/")
+@CrossOrigin(
+        value = "http://localhost:3000/"
+)
 public class cinemaController {
     @Autowired
     CinemaService cinemaService;

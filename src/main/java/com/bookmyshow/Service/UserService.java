@@ -73,6 +73,7 @@ public class UserService {
     }
 
     public String addUserWithOtp(User user) {
+
         if(list.contains(user)){
             validUser user1=new validUser();
             user1.setUserEmailId(user.getUserEmailId());
