@@ -5,4 +5,4 @@ RUN mvn clean package -DskipTests
 FROM openjdk:17.0.1-jdk-slim
 COPY --from=build /target/BookMyShow-0.0.1-SNAPSHOT.jar BookMyShow.jar
 EXPOSE 8080
-ENTRYPOINT["java","-jar","bookmyshow.jar"]
+ENTRYPOINT["java","-jar","BookMyShow.jar"]
